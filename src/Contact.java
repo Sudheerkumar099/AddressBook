@@ -22,26 +22,43 @@ public class Contact {
         this.email = email;
     }
 
-    // Getters & Setters
-    public String getFirstName() { return firstName; }
+    // Getters
+    public String getFirstName() {
+        return firstName;
+    }
 
-    public String getLastName() { return lastName; }
+    public String getLastName() {
+        return lastName;
+    }
 
-    public String getAddress() { return address; }
+    public String getAddress() {
+        return address;
+    }
 
-    public String getCity() { return city; }
+    public String getCity() {
+        return city;
+    }
 
-    public String getState() { return state; }
+    public String getState() {
+        return state;
+    }
 
-    public int getZip() { return zip; }
+    public int getZip()
+    {
+        return zip;
+    }
 
-    public long getPhoneNumber() { return phoneNumber; }
+    public long getPhoneNumber()
+    {
+        return phoneNumber;
+    }
 
-    public String getEmail() { return email; }
+    public String getEmail() {
+        return email;
+    }
 
     @Override
     public String toString() {
-        return
-               "First name: "+  firstName +" LastName: "+ lastName +" Address: "+ address +" City: "+ city +" Zip:"+zip+" Phone number: "+phoneNumber;
+        return "First name: "+  firstName +" LastName: "+ lastName +" Address: "+ address +" City: "+ city +" Zip:"+zip+" Phone number: "+phoneNumber;
     }
 }
