@@ -35,7 +35,8 @@ private ArrayList<Contact> contactlist=new ArrayList<Contact>();
                     ab.editInformation(ab.contactlist);
                 } else if (n == 3) {
                     ab.deleteContact(ab.contactlist);
-                } else if(n==4){
+                }
+                else if(n==4){
                     ab.addMultipleContacts(ab.contactlist);
                 }
                 else {
@@ -105,10 +106,10 @@ private ArrayList<Contact> contactlist=new ArrayList<Contact>();
         }
     }
 
-    public void deleteContact(List <Contact> contactList){
-        Scanner sc= new Scanner(System.in);
+    public void deleteContact(List<Contact> contactList) {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Contact Name");
-        String name= sc.nextLine();
+        String name = sc.nextLine();
         Iterator<Contact> it = contactList.iterator();
         while (it.hasNext()) {
             Contact c = it.next();
@@ -116,19 +117,19 @@ private ArrayList<Contact> contactlist=new ArrayList<Contact>();
                 it.remove();
                 System.out.println("Deleted successfully");
                 System.out.println(contactList);
-            }
-            else{
+            } else {
                 System.out.println("enter the correct Contact Name");
             }
         }
 
     }
-    public void addMultipleContacts(List <Contact> contactList){
-Scanner sc = new Scanner(System.in);
+
+    public void addMultipleContacts(List<Contact> contactList) {
+        Scanner sc = new Scanner(System.in);
         System.out.println("enter the number of users you wnt to Add");
-        int n=sc.nextInt();
+        int n = sc.nextInt();
         AddressBook ab = new AddressBook();
-        for(int i=0;i<n;i++){
+        for (int i = 0; i < n; i++) {
             ab.addNewContact();
         }
     }
