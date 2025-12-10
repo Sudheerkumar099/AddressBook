@@ -1,4 +1,3 @@
-import com.sun.net.httpserver.Authenticator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
