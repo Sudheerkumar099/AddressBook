@@ -39,7 +39,7 @@ public ArrayList<Contact> contactlist=new ArrayList<Contact>();
 sc.close();
 
     }
-    public void commit addNewContact(){
+    public void  addNewContact(){
         Scanner sc = new Scanner(System.in);
 //        String firstName="";
 //        String lastName="";
