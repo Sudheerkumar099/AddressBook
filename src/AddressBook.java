@@ -35,9 +35,7 @@ private ArrayList<Contact> contactlist=new ArrayList<Contact>();
                     ab.editInformation(ab.contactlist);
                 } else if (n == 3) {
                     ab.deleteContact(ab.contactlist);
-                } else if(n==4){
-                    ab.addMultipleContacts(ab.contactlist);
-                }
+                } 
                 else {
                     System.out.println("choose the correct Option");
                 }
@@ -123,14 +121,6 @@ private ArrayList<Contact> contactlist=new ArrayList<Contact>();
         }
 
     }
-    public void addMultipleContacts(List <Contact> contactList){
-Scanner sc = new Scanner(System.in);
-        System.out.println("enter the number of users you wnt to Add");
-        int n=sc.nextInt();
-        AddressBook ab = new AddressBook();
-        for(int i=0;i<n;i++){
-            ab.addNewContact();
-        }
-    }
+   
 
 }
